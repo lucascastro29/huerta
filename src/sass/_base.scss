@@ -1,0 +1,48 @@
+$white: rgb(245, 245, 245);
+$color-grey-lightest: rgb(220, 220, 220);
+$color-grey-lighter: rgb(180, 180, 180);
+$color-grey: rgb(130, 130, 130);
+$color-grey-dark: rgb(90, 90, 90);
+$color-grey-darker: rgb(60, 60, 60);
+$color-grey-darkest: rgb(40, 40, 40);
+
+// $color-highlight: rgb(56, 224, 50);
+$color-highlight: #85e640;
+$color-highlight-medium: darken($color-highlight, 10%);
+$color-highlight-dark: darken($color-highlight, 20%);
+
+$bp-1100: 68.75em;
+$bp-850: 53.125em;
+$bp-800: 50em;
+$bp-750: 46.875em;
+$bp-650: 40.625em;
+$bp-600: 37.5em;
+$bp-400: 25em;
+$bp-330: 26.25em;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  background-color: $white;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+
+  @media only screen and (max-width: $bp-800) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-400) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: $bp-330) {
+    font-size: 33.3%;
+  }
+}

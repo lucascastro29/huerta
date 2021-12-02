@@ -1,0 +1,66 @@
+.collage {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 8vh);
+  grid-gap: 2rem;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(black, 0.4);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-lightest;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: transparent;
+      transition: all 0.2s linear;
+    }
+
+    &-link {
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    &-content {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 40%;
+    }
+
+    &--small {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+
+    &--medium {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.footer {
+  background-color: $color-grey-dark;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 80;
+
+  &__contact {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 4rem;
+    padding: 1rem;
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    .icon {
+      width: 3rem;
+      height: 3rem;
+      fill: $color-highlight-dark;
+    }
+
+    &:hover {
+      .icon {
+        fill: $color-highlight-medium;
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 1rem;
+    color: $color-grey-lightest;
+    font-size: 2rem;
+
+    &.link {
+      color: $color-highlight;
+      border-bottom: 1px solid $color-highlight;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 2rem;
+    color: $color-grey-lightest;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      border: 1px solid $color-grey-lighter;
+      width: 20rem;
+
+      @media only screen and (max-width: $bp-650) {
+        width: 4rem;
+      }
+    }
+
+    &::before {
+      left: -21rem;
+
+      @media only screen and (max-width: $bp-650) {
+        left: -5rem;
+      }
+    }
+
+    &::after {
+      right: -21rem;
+
+      @media only screen and (max-width: $bp-650) {
+        right: -5rem;
+      }
+    }
+  }
+
+  &__copy {
+    font-size: 1.6rem;
+    text-align: center;
+    color: $color-grey-darkest;
+
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+    line-height: 1;
+  }
+
+  &__credit {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+
+    color: $color-highlight-medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    display: block;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: $color-grey-lighter;
+    border-bottom: 1px solid transparent;
+
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.4) rotate(-2deg);
+      border-bottom: 1px solid $color-highlight;
+    }
+  }
+}
