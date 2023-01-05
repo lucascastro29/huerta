@@ -1,0 +1,23 @@
+[
+  
+  {
+    "title": "Taller huerta participativa con Ing Agronómo",
+    "desc": "Taller abierto a la Comunidad, Agroecologia y Soberania alimentaria para todas las edades.",
+    "images": ["ing-agro-1.jpg","evento-16-11.jpeg","ing-agro-2.jpg"]
+  },
+  {
+    "title": "Taller de alimentación",
+    "desc": "Taller a cargo de practicantes del EFI de la Udelar.Escuela de nutrición.",
+    "images": ["taller-alm-1.jpg","taller-alm-2.jpg","evento-alimentación.png"]
+  },
+  {
+    "title": "Taller de Cuentos",
+    "desc": "Fátima, maestra jubilada y vecina del Covisunca, escribe cuentos para niños en base a la huerta comunitaria.",
+    "images": ["taller-ab-3.jpg","taller-ab-2.jpg","taller-ab-1.jpg"]
+  },
+  {
+    "title": "Taller de Inglés.Visita instituto de inglés",
+    "desc": "Intercambio e integración, segundas lenguas.Los estudiantes del instituto nos enseñan los nombres de las hortalizas en inglés y colocan carteles.",
+    "images": ["taller-ing-2.jpg","taller-ing-3.jpg","taller-ing-1.jpg"]
+  }
+]
